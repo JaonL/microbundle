@@ -22,6 +22,7 @@ import smartAsset from 'rollup-plugin-smart-asset';
 import logError from './log-error';
 import { readFile, isDir, isFile, stdout, stderr, isTruthy } from './utils';
 import camelCase from 'camelcase';
+import copy from 'rollup-plugin-copy-assets';
 
 const removeScope = name => name.replace(/^@.*\//, '');
 
@@ -516,7 +517,11 @@ function createConfig(options, entry, format, writeMeta) {
 			treeshake: {
 				propertyReadSideEffects: false,
 			},
-			plugins: []
+			plugins: [
+				copy({
+					assets: ['src/assets'],
+				}),
+			]
 				.concat(
 					postcss({
 						plugins: [
