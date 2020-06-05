@@ -108,6 +108,7 @@ const EXTENSIONS = [
 	'.jpg',
 	'.png',
 	'.svg',
+	'.mp3',
 ];
 
 const WATCH_OPTS = {
