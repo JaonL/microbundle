@@ -1,3 +1,5 @@
+**NOTE** (Jason Lu): This is a fork of a fork made for personal use as a quick solution to fix some issues due to dependency versioning + enable the bundling of static asset files.
+
 **NOTE** (Travis Fischer): this is a custom fork of [microbundle](https://github.com/developit/microbundle) which focuses on React for [create-react-library](https://github.com/transitive-bullshit/create-react-library) which adds a few nice-to-have features:
 
 - Changes the default `jsx` option to `React.createElement`
